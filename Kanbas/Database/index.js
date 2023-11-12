@@ -1,8 +1,8 @@
-import kanbas_nav_items from "./kanbas_nav_items.json" assert { type: "json" };
-import courses from './courses.json' assert { type: "json" };
-import course_nav from './course_nav.json' assert { type: "json" };
-import modules from './modules.json' assert { type: "json" };
-import course_tasks from './course_tasks.json' assert { type: "json" };
+import kanbas_nav_items from "./kanbas_nav_items.json";
+import courses from './courses.json';
+import course_nav from './course_nav.json';
+import modules from './modules.json';
+import course_tasks from './course_tasks.json';
 
 
 export default {
