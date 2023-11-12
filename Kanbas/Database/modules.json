@@ -1,0 +1,74 @@
+[
+    {
+        "_id": "CS5610_M1",
+        "course_id": "CS5610",
+        "module_header": "Resources",
+        "module_description": ""
+    },
+    {
+        "_id": "CS5610_M2",
+        "course_id": "CS5610",
+        "module_header": "Week 0 - INTRO",
+        "module_description": "Understanding Web development basics"
+    },
+    {
+        "_id": "CS5610_M3",
+        "course_id": "CS5610",
+        "module_header": "Week 1 - HTML CSS",
+        "module_description": "Learn HTML CSS"
+    },
+    {
+        "_id": "CS6140_M1",
+        "course_id": "CS6140",
+        "module_header": "Resources",
+        "module_description": ""
+    },
+    {
+        "_id": "CS6140_M2",
+        "course_id": "CS6140",
+        "module_header": "Week 0 - INTRO",
+        "module_description": "Understand Machine Learning"
+    },
+    {
+        "_id": "CS6140_M3",
+        "course_id": "CS6140",
+        "module_header": "Week 1 - Linear Regression",
+        "module_description": "Basic model"
+    },
+    {
+        "_id": "CS5800_M1",
+        "course_id": "CS5800",
+        "module_header": "Resources",
+        "module_description": ""
+    },
+    {
+        "_id": "CS5800_M2",
+        "course_id": "CS5800",
+        "module_header": "Week 0 - INTRO",
+        "module_description": "What is algorithms"
+    },
+    {
+        "_id": "CS5800_M3",
+        "course_id": "CS5800",
+        "module_header": "Week 1 - String",
+        "module_description": "String datatype"
+    },
+    {
+        "_id": "CS5010_M1",
+        "course_id": "CS5010",
+        "module_header": "Resources",
+        "module_description": ""
+    },
+    {
+        "_id": "CS5010_M2",
+        "course_id": "CS5010",
+        "module_header": "Week 0 - INTRO",
+        "module_description": "Java basics"
+    },
+    {
+        "_id": "CS5010_M3",
+        "course_id": "CS5010",
+        "module_header": "Week 1 - Java OOPs",
+        "module_description": "Grasp OOPs concepts"
+    }
+]
