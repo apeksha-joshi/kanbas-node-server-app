@@ -2,8 +2,12 @@ import * as userDao from '../dao/users.js';
 //let currentUser = null;
 
 const createUser = async (req, res) => { 
-    const user = await userDao.createUserDB(req.body);
-    res.json(user);
+    try{
+        const user = await userDao.createUserDB(req.body);
+        res.json(user);
+    }catch(error){
+        res.status(400).json({message: "User already exists"});
+    }    
 };
 const deleteUser = async (req, res) => { 
     const status = await userDao.deleteUser(req.params.userId);
@@ -18,16 +22,22 @@ const findUserById = async (req, res) => {
     res.json(user);
 };
 const updateUser = async (req, res) => {
-    const {userId} = req.params;
-    const status = await userDao.updateUser(userId, req.body);
-    const currentUser = await userDao.findUserById(userId);
-    req.session['currentUser'] = currentUser;
-    res.json(status);
+    try{
+        const {userId} = req.params;
+        const status = await userDao.updateUser(userId, req.body);
+        const currentUser = await userDao.findUserById(userId);
+        req.session['currentUser'] = currentUser;
+        res.json(status);
+    }catch(error){
+        res.status(400).json({message: "User doesnot exist"});
+    } 
+    
  };
 const signup = async (req, res) => { 
     const user = await userDao.findUserByUsername(req.body.username);
     if(user){
         res.status(400).json({message: "Username already taken"});
+        return;
     }
     await userDao.createUserDB(req.body);
     const currentUser = await userDao.findUserByCredentials(req.body.username, req.body.password);

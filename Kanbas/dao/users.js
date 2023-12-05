@@ -1,7 +1,13 @@
 import model from '../models/users/userModel.js'
 
 export const createUserDB = async (user) => {
-    const newUser = await model.create(user);
+    try{
+        const newUser = await model.create(user);
+        return newUser;
+    }catch(error){
+        throw new Error("Duplicate User")
+    }
+    
 }
 
 export const findAllUsers = () => model.find();
